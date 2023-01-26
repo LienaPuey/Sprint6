@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+
 
 @Component({
   selector: 'app-escena',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./escena.component.scss']
 })
 export class EscenaComponent {
-
+  @Input() data:string[]= [];
+ 
 }
