@@ -3,4 +3,4 @@
     <button (click)="next()">SEGÜENT</button>
 </div>
 <div  *ngFor="let frase of data.frases; index as i">
-    <p class="parrafo" [ngClass]="{'selected': i === selected}" (click)="selected = i">{{frase}}</p></div>
+    <p class="parrafo" [ngClass]="{'selected': i === selected}" >{{frase}}</p></div>
