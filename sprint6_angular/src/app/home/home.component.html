@@ -1,0 +1,11 @@
+<div class="fondo" *ngIf="!isOn">
+    <div class="cuadricula">
+        <h1>Benvingut!</h1>
+        <p>Vols endinsar-te en una nova aventura?</p>
+
+        <button  id="showComponent" (click)="isOn = true">Comença</button>
+    </div>
+    <small><a href="https://www.freepik.com/free-vector/color-seamless-space-pattern_10838001.htm#query=space&position=13&from_view=keyword">Image by tartila</a> on Freepik</small>
+</div>
+
+<app-escena *ngIf="isOn" [data]="frases"></app-escena>
