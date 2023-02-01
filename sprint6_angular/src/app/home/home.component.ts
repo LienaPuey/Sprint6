@@ -7,7 +7,8 @@ import * as frases from '../../app/frases.json';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {  
+  isOn: boolean = false;
   frases = frases;
-  
+
   
 }
