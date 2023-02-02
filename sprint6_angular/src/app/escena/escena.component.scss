@@ -3,9 +3,12 @@
     border: 2px solid black;
     border-radius: 1.5rem;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.543);
+    margin: 1rem;
 }
 .botonesDiv{
     display: flex;
+    margin: 0.5rem;
 
 }
 button {
@@ -16,4 +19,8 @@ button {
 
 .selected{
     background-color: rgb(255, 140, 140);
+}
+
+.fondoEscena{
+    background-color: red;
 }

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 
 @Component({
@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class EscenaComponent implements OnInit{
   @Input() data: any =  [];
+  @Output() onChangeBgImg: EventEmitter<string> = new EventEmitter();
 
   selected: number = 0;
 
@@ -20,11 +21,15 @@ export class EscenaComponent implements OnInit{
   prev(){
     if (this.selected > 0) {
       this.selected--;
+      this.onChangeBgImg.emit(this.data[this.selected].img);
    }
   }
   next(){
     if (this.selected < this.data.length - 1) {
       this.selected++;
+      this.onChangeBgImg.emit(this.data[this.selected].img);
+
+      
   }
   }
 

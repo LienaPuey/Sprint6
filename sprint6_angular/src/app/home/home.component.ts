@@ -9,8 +9,13 @@ import * as frases from '../../app/frases.json';
 export class HomeComponent {  
   isOn: boolean = false;
   frases = frases;
+  backgroundImage: string= "";
+
   constructor (){
     console.log(this.frases.frases);
+  }
+  changeBgImg(){
+    
   }
   
 }
