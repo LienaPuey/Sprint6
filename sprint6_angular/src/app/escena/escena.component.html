@@ -2,5 +2,5 @@
     <button (click)="prev()">ANTERIOR</button>
     <button (click)="next()">SEGÜENT</button>
 </div>
-<div  *ngFor="let frase of data.frases; index as i">
-    <p class="parrafo" [ngClass]="{'selected': i === selected}" >{{frase.txt}}</p></div>
+<div  *ngFor="let frase of data; index as i">
+    <p class="parrafo" [ngClass]="{'selected': i === selected}" >{{frase.txt}}</p>{{frase.img}}</div>

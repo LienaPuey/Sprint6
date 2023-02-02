@@ -9,6 +9,8 @@ import * as frases from '../../app/frases.json';
 export class HomeComponent {  
   isOn: boolean = false;
   frases = frases;
-
+  constructor (){
+    console.log(this.frases.frases);
+  }
   
 }
