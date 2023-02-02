@@ -13,9 +13,11 @@ export class HomeComponent {
 
   constructor (){
     console.log(this.frases.frases);
+
   }
-  changeBgImg(){
-    
+  changeBgImg(evento:string){
+    let fondo: HTMLElement |any = document.getElementById("fondoEscena");
+    fondo.style.backgroundImage = `url('${evento}')`;
   }
   
 }

@@ -1,6 +1,6 @@
 
 .fondo {
-    height: 100vh;
+    height:100vh;
     width: 100%;
     margin: 0;
     position: relative;
@@ -35,7 +35,7 @@ h1 {
 
 p {
     font-size: 50px;
-    padding: 5rem;
+    padding: 3rem;
 }
 #showComponent{
     font-size: 30px;
@@ -44,10 +44,9 @@ p {
     border:0;
     font-weight: bold;
     transition: transform .2s;
-    &hover{
+    &:hover{
         background-color: rgb(255, 234, 0);
         transform: scale(1.3);
-        
     }
 }
 a{
@@ -55,3 +54,15 @@ a{
     color: white;
 }
 
+#fondoEscena {
+    background-image: url('../../assets/1.jpg');
+    background-image: no-repeat;
+    background-image: fixed;
+    background-image: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
